@@ -11,9 +11,11 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+        /* margin: 0;
+        padding: 0; */
+        box-sizing: border-box; 
+        font-family: 'Manrope';
+        background-color: #FFFAFA;
     }
 
     html {
@@ -23,8 +25,6 @@ export const GlobalStyles = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
-        font-family: 'Manrope';
-        background-color: #FFFAFA;
     }
 
     a {

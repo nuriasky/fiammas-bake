@@ -1,5 +1,12 @@
 import React from 'react'
-import { NavLinksContainerStyled, NavbarContainerStyled } from './NavbarStyles'
+import { BurgerMenuStyled, NavLinkStyled, NavLinksContainerStyled, NavbarContainerStyled, NavbarLinksStyled, CartAndUserStyled, CartStyled, UserStyled } from './NavbarStyles'
+
+    //ICONS
+import { TbShoppingCartFilled } from "react-icons/tb"
+import { FaUser } from "react-icons/fa"
+import { LuMenu } from "react-icons/lu"
+
+import { motion } from "framer-motion"
 
 const Navbar = () => {
   return (
@@ -12,10 +19,42 @@ const Navbar = () => {
 
         <NavLinksContainerStyled>
 
+                <motion.div whileTap={{scale: 0.9}}>
+                    <BurgerMenuStyled>
+                        <LuMenu/>
+                    </BurgerMenuStyled>
+                </motion.div>
+
+                <NavbarLinksStyled>
+                    
+                    <NavLinkStyled to='/'>Inicio</NavLinkStyled>
+                    <NavLinkStyled to= '/'>Destacados</NavLinkStyled>
+                    <NavLinkStyled to= '/'>Creaciones</NavLinkStyled>
+                    <NavLinkStyled to= '/'>Sobre Nosotros</NavLinkStyled>
+
+                </NavbarLinksStyled>
         </NavLinksContainerStyled>
+
+        <CartAndUserStyled>
+            <motion.div whileHover={{scale: 1.05}}>
+                <a href="/#">
+                    <CartStyled>
+                        <TbShoppingCartFilled/>
+                    </CartStyled>
+                </a>
+            </motion.div>
+
+            <motion.div whileHover={{scale: 1.05}}>
+                <a href="/#">
+                    <UserStyled>
+                        <FaUser/>
+                    </UserStyled>
+                </a>
+            </motion.div>
+
+        </CartAndUserStyled>
+
     </NavbarContainerStyled>
-
-
   )
 }
 
