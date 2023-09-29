@@ -38,7 +38,7 @@ export const TitleSpan = styled.span `
 
 export const HeroText = styled.p `
     width: 320px;
-    color: var(--black-text);
+    color: #3D3534;
     font-weight: 500;
     font-size: 18px;
 `;
