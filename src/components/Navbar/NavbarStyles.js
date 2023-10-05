@@ -23,7 +23,7 @@ export const NavLinksContainerStyled = styled.nav `
 
 export const NavbarLinksStyled = styled.ul `
     display: flex;
-    gap: 40px;
+    gap: 10px;
 `;
 
 export const NavLinkStyled = styled(NavbarLinksStyled) `

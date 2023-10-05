@@ -27,7 +27,7 @@ export const HeroTitle = styled.h1 `
     text-align: center;
     color: #3D3534;
     font-size: 38px;
-    font-family: 'bricolage grotesque';
+    font-family: 'Bricolage Grotesque', sans-serif;
     text-transform: uppercase;
 `;
 
